@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <Authors>剧毒的KCN</Authors>
+	  <PackAsTool>true</PackAsTool>
+	  <ToolCommandName>lanzou</ToolCommandName>
+	  <PublishAot>true</PublishAot>
+	  <TrimMode>partial</TrimMode>
+	  <IlcOptimizationPreference>Size</IlcOptimizationPreference>
+	  <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<TrimmerRootAssembly Include="CommandLine" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<RdXmlFile Include="rd.xml" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="KCNLanzouDirectLink" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
