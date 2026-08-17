@@ -24,7 +24,7 @@
 	
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
-    <PackageReference Include="KCNLanzouDirectLink" Version="2.1.0" />
+    <PackageReference Include="KCNLanzouDirectLink" Version="2.2.0" />
   </ItemGroup>
 
 </Project>
